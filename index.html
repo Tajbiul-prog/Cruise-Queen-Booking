@@ -14,101 +14,114 @@
 </head>
 
 <body>
-    <!--Header and Menu Section-->
-    <header class="container">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a class="active" href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="confirm">
+        <!--Header and Menu Section-->
+        <header class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!--Booking Section-->
-    <main class="main-content container">
+        <!--Booking Section-->
+        <main class="main-content container">
 
-        <div class="booking-content">
-            <h1>Cruise Queen</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book./p>
-        </div>
-
-
-        <div class="booking-form">
-            <h3>Book Ocean Time</h3>
-            <div class="input-group">
-                <label for="">Travel From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
+            <div class="booking-content">
+                <h1>Cruise Queen</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book./p>
             </div>
-            <div class="input-group">
-                <label for="">Travel To</label>
-                <input class="inp-style" type="text" name="" placeholder="New York, United States">
-            </div>
-            <div class="inputs">
+
+
+            <div class="booking-form">
+                <h3>Book Ocean Time</h3>
                 <div class="input-group">
-                    <label" for="">Departure</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Travel From</label>
+                    <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
                 </div>
                 <div class="input-group">
-                    <label for="">Return</label>
-                    <input class="inp-style" type="date" name="">
+                    <label for="">Travel To</label>
+                    <input class="inp-style" type="text" name="" placeholder="New York, United States">
                 </div>
-            </div>
-            <div class="input-group f-class">
-                <div>
-                    <label for="">First Class ($150)</label>
-                    <input id="firstClassTicket" class="inp-style inp-width" type="number" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <p onclick="handleFirstClass(true)" class="hoverAddMinus">+</p>
-                    <p onclick="handleFirstClass(false)" class="hoverAddMinus">-</p>
-                </div>
-            </div>
-            
-            <div class="input-group f-class">
-                <div>
-                    <label for="">Economy Class ($100)</label>
-                    <input id="economyClassTicket" class="inp-style inp-width" type="number" value="0">
-                </div>
-                <div class="plus-minus-btn">
-                    <p onclick="handleEconomyClass(true)" class="hoverAddMinus">+</p>
-                    <p onclick="handleEconomyClass(false)" class="hoverAddMinus">-</p>
-                </div>
-            </div>
-            <div class="calculations">
-                <div class="amount">
-                    <div class="left">
-                        <p>Subtotal</p>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label" for="">Departure</label>
+                            <input class="inp-style" type="date" name="">
                     </div>
-                    <div class="right">
-                        <p>$<span id="subTotal">0</span></p>
+                    <div class="input-group">
+                        <label for="">Return</label>
+                        <input class="inp-style" type="date" name="">
+                    </div>
+                </div>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">First Class ($150)</label>
+                        <input id="firstClassTicket" class="inp-style inp-width" type="text" value="0">
+                    </div>
+                    <div class="plus-minus-btn">
+                        <p onclick="handleFirstClass(true)" class="hoverAddMinus">+</p>
+                        <p onclick="handleFirstClass(false)" class="hoverAddMinus">-</p>
                     </div>
                 </div>
 
-                <div class="amount">
-                    <div class="left">
-                        <p>Charge 10% VAT</p>
+                <div class="input-group f-class">
+                    <div>
+                        <label for="">Economy Class ($100)</label>
+                        <input id="economyClassTicket" class="inp-style inp-width" type="text" value="0">
                     </div>
-                    <div class="right">
-                        <p>$<span id="vatCharge">0</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="amount">
-                    <div class="left">
-                        <h4>Total</h4>
-                    </div>
-                    <div class="right">
-                        <p>$<span id="total">0</span></p>
+                    <div class="plus-minus-btn">
+                        <p onclick="handleEconomyClass(true)" class="hoverAddMinus">+</p>
+                        <p onclick="handleEconomyClass(false)" class="hoverAddMinus">-</p>
                     </div>
                 </div>
+                <div class="calculations">
+                    <div class="amount">
+                        <div class="left">
+                            <p>Subtotal</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="subTotal">0</span></p>
+                        </div>
+                    </div>
+
+                    <div class="amount">
+                        <div class="left">
+                            <p>Charge 10% VAT</p>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="vatCharge">0</span></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="amount">
+                        <div class="left">
+                            <h4>Total</h4>
+                        </div>
+                        <div class="right">
+                            <p>$<span id="total">0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <button id="bookNowButton" class="btn-style hoverAddMinus">Book Now</button>
             </div>
-            <button class="btn-style hoverAddMinus">Book Now</button>
-        </div>
+    </div>
+    <div id="confirmation" class="confirmation-notice">
+        <h1>Booking Confirmation Notice</h1>
+        <br>
+        <br>
+        <p>We are pleased to inform you that your ticket has been confirmed. Stay safe & enjoy your trip.</p>
+        <br>
+        <h3>Thank You</h3>
+    </div>
     </main>
 
-        <script src="script.js"></script>
+    <script src="script.js"></script>
     <!--Thank You-->
 </body>
 
