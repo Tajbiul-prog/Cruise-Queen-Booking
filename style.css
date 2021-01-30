@@ -97,11 +97,16 @@ nav ul li a:hover, a.active{
     min-width: 300px;
 }
 .plus-minus-btn{
-    color: #3352F2;
+    display: flex;
     font-size: 30px;
-    padding: 2px;
     margin: 10px 5px 0px 0px;
     word-spacing: 20px;
+}
+.hoverAddMinus:hover{
+    cursor: pointer;
+}
+.plus-minus-btn p{
+    padding: 10px;
 }
 .booking-form .inputs{
     display: grid;

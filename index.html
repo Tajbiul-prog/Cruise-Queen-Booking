@@ -38,11 +38,11 @@
         <div class="booking-form">
             <h3>Book Ocean Time</h3>
             <div class="input-group">
-                <label for="">Flying From</label>
-                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+                <label for="">Travel From</label>
+                <input class="inp-style" type="text" name="" placeholder="Dhaka, Bangladesh">
             </div>
             <div class="input-group">
-                <label for="">Flying To</label>
+                <label for="">Travel To</label>
                 <input class="inp-style" type="text" name="" placeholder="New York, United States">
             </div>
             <div class="inputs">
@@ -58,20 +58,22 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <input id="firstClassTicket" class="inp-style inp-width" type="number" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p>+ -</p>
+                    <p onclick="handleFirstClass(true)" class="hoverAddMinus">+</p>
+                    <p onclick="handleFirstClass(false)" class="hoverAddMinus">-</p>
                 </div>
             </div>
             
             <div class="input-group f-class">
                 <div>
-                    <label for="">Economy ($100)</label>
-                    <input class="inp-style inp-width" type="number" name="">
+                    <label for="">Economy Class ($100)</label>
+                    <input id="economyClassTicket" class="inp-style inp-width" type="number" value="0">
                 </div>
                 <div class="plus-minus-btn">
-                    <p> <span>+</span> <span>-</span> </p>
+                    <p onclick="handleEconomyClass(true)" class="hoverAddMinus">+</p>
+                    <p onclick="handleEconomyClass(false)" class="hoverAddMinus">-</p>
                 </div>
             </div>
             <div class="calculations">
@@ -80,7 +82,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$500</p>
+                        <p>$<span id="subTotal">0</span></p>
                     </div>
                 </div>
 
@@ -89,7 +91,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p>$<span id="vatCharge">0</span></p>
                     </div>
                 </div>
                 <hr>
@@ -98,14 +100,15 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p>$<span id="total">0</span></p>
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button class="btn-style hoverAddMinus">Book Now</button>
         </div>
     </main>
 
+        <script src="script.js"></script>
     <!--Thank You-->
 </body>
 
